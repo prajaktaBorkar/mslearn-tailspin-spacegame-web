@@ -20,13 +20,13 @@
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
-trigger:
+- trigger:
   master
 
-pool:
+- pool:
   vmImage: 'windows-latest'
 
-variables:
+- variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
