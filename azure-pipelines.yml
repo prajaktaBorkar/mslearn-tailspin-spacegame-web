@@ -1,11 +1,5 @@
 # ASP.NET Core (.NET Framework)
-- task: S3Upload@1
-  inputs:
-    awsCredentials: 'MyCredentials'
-    regionName: 'us-east-2'
-    bucketName: 'testbucket'
-    globExpressions: '**'
-    createBucket: true
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
